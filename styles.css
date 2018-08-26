@@ -1,0 +1,132 @@
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background-color: #1b1818;
+  margin:0;
+  padding:0;
+  background: url(https://nssdc.gsfc.nasa.gov/image/planetary/mars/vikinglander2-2.jpg) no repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+h1 {
+  font-size: 300%; 
+  font-weight: bold;
+  color: cadetblue;
+  text-align: center;
+    }
+
+h2 {
+  font-size: 300%;
+  font-weight: bold;
+  color: cadetblue;
+  text-align: left;
+}
+h3 {
+  font-size: 300%;
+  font-weight: bold;
+  color: cadetblue;
+  text-align: right;
+}
+/* Giving our navbar some padding and a background color */
+.navbar {
+  padding: 10px;
+  background: white;
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Getting rid of the default link styles here */
+.navbar li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Styling the header, giving it a height, a background color, and some top padding */
+.header {
+  height: 200px;
+  padding-top: 20px;
+  background: white;
+}
+
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 60px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+  background: aqua;
+}
+
+/* Giving the .post element margin on 3 sides */
+.post {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#nav-select {
+  visibility: hidden;
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar li {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+  .text{
+    font-size: 30px;
+  }
+  .panel-body{
+    background-color: #f8f8f8;
+    }
+    
+  }
+  .panel{
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+   }
+  
+   .paragraph1 {
+    font-size: 40px;
+    color: cadetblue;
+    font-weight: bold;
+  }
+  .paragraph2 {
+    font-size: 30px;
+  }
+}
+.paragraph3 {
+  font-size: 40px;
+}
+
+}
